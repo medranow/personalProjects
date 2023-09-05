@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "chrome",
+    "version": "1.0.0",
+    "description": "Slowth reminder! Take a break every set minutes",
+    //The  numbers in icons means different size icons 16 x 16 px, etc.
+
+
+    "permissions": [
+        "notifications",
+        "alarms"
+    ],
+
+    "action": {
+        "default_icon": {
+            "16": "/img/sloth_16.png",
+            "32": "/img/sloth_32.png",
+            "128": "/img/sloth_128.png"
+        }
+    },
+
+    "icons": {
+        "16": "/img/sloth_16.png",
+        "32": "/img/sloth_32.png",
+        "128": "/img/sloth_128.png"
+    },
+
+    "background": {
+        "service_worker":
+            "/js/background.js"
+    },
+
+    //browser_action means that the actions will apply to the whole browser as opposed to page_action
+
+    "action": {
+        "default_title": "Posture popup",
+        "default_popup": "popup.html",
+        "defaul_icon": {
+            "16": "/img/slowth_16.png",
+            "32": "/img/slowth_32.png",
+            "128": "/img/sloth_128.png"
+        }
+    }
+}

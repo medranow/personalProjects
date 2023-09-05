@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slowth reminder </title>
+        <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+        <style>
+
+
+            body {
+                text-align: center;
+                background-color: #C36A2D;
+            }
+
+            .button {
+                border-radius: 7px;
+                border: 1px #FBFBFB;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                font-size: 15px;
+                background-color: #E2C275;
+                padding: 8px 18px;
+                font-family: 'Annie Use Your Telescope';
+                transition-duration: 1s;
+            }
+
+            .button:hover {
+                background-color: #C36A2D;
+                color: #EADCA6;
+
+            }
+
+
+            header {
+                font-family: 'Angkor';
+                color: #EADCA6;
+                font-size: 18px;
+                width: 200px;
+            }
+
+            input {
+                background-color: #E2C275;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+                text-align: center;
+                width: 25px;
+                border: 1px #FBFBFB;
+            }
+
+            p {
+                background-color: #EADCA6;
+                border: 3px #FBFBFB;
+                box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
+                padding: 2px 2px 4px 2px;
+                font-family: 'Annie Use Your Telescope';
+                font-size: 18px;
+                text-align: center;
+                width: 100px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            span {
+                color: #EADCA6;
+                font-family: 'Annie Use Your Telescope';
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="text">
+            'Cause we all need to slowth <img src="/img/sloth_32.png">
+        </header>
+        <form>
+            <div>
+                <p>Remind me to slowth every:</p>
+                <input type="number" name="time" id="time" value="1" min="1" max="59" maxlength="2" placeholder="Minutes" /> <span> minute(s)</span>
+            </div>
+            <br>
+            <button class="button" type="submit" value="Update" id="submit">Update</button>
+        </form>
+        <br>
+        <button class="button" type="submit" value="Off" id="off">Off</button>
+    </body>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/popup.js"></script>
+</html>
